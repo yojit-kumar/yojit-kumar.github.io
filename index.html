@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yojit Kumar — Physics & Code</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,700;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo"><span>∇</span> yojit.kumar</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="toggle-icon" id="toggleIcon">☽</span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text fade-up">
+      <div class="hero-tag">Physics × Computation</div>
+      <h1>Yojit<br><em>Kumar</em></h1>
+      <p class="hero-sub">BSMS Physics · 3rd Year · India</p>
+      <p class="hero-desc">
+        I study the universe with equations and simulate it with code.
+        Currently focused on computational physics, numerical methods,
+        and machine learning applied to physical systems.
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-visual fade-up">
+      <svg class="physics-diagram" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="smallgrid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--grid-line)" stroke-width="0.5"/>
+          </pattern>
+          <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="var(--ink2)"/>
+          </marker>
+        </defs>
+        <rect width="360" height="360" fill="url(#smallgrid)" opacity="0.5"/>
+        <line x1="40" y1="320" x2="320" y2="320" stroke="var(--ink2)" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <line x1="40" y1="320" x2="40" y2="40" stroke="var(--ink2)" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="326" y="324" font-family="DM Mono, monospace" font-size="11" fill="var(--ink3)">x</text>
+        <text x="30" y="36" font-family="DM Mono, monospace" font-size="11" fill="var(--ink3)">E</text>
+        <path d="M 40 220 C 60 220, 70 120, 90 140 C 110 160, 120 260, 140 240 C 160 220, 170 160, 190 180 C 210 200, 220 240, 240 230 C 260 220, 270 200, 290 210 C 305 216, 315 218, 320 218"
+          stroke="var(--accent)" stroke-width="2" fill="none" opacity="0.9"/>
+        <line x1="55" y1="290" x2="305" y2="290" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="55" y1="240" x2="305" y2="240" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="55" y1="175" x2="305" y2="175" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="55" y1="115" x2="305" y2="115" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
+        <text x="308" y="293" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=1</text>
+        <text x="308" y="244" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=2</text>
+        <text x="308" y="179" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=3</text>
+        <text x="308" y="119" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=4</text>
+        <path d="M 60 70 L 60 310 L 300 310 L 300 70" stroke="var(--ink)" stroke-width="2" fill="none" opacity="0.3"/>
+        <circle cx="190" cy="180" r="4" fill="var(--accent)"/>
+        <text x="60" y="64" font-family="DM Mono, monospace" font-size="10" fill="var(--ink3)">ψ(x) — particle in a box</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-text fade-up">
+      <p class="section-label">// about me</p>
+      <h2>Physics student<br>& <em>curious coder</em></h2>
+      <p>
+        I'm a 3rd year BSMS student majoring in Physics. My current focus is on
+        learning how to translate physical systems into numerical models — from
+        ODEs and eigenvalue problems to Monte Carlo simulations.
+      </p>
+      <p>
+        I'm working through the University of Oslo's FYS3150/4150 Computational
+        Physics curriculum in C++, which covers linear algebra, differential
+        equations, and statistical mechanics from scratch. I also work on
+        ML and data science projects on the side.
+      </p>
+      <p>
+        I maintain two GitHub accounts:
+        <a href="https://github.com/yojit-kumar" target="_blank" class="inline-link">yojit-kumar</a>
+        for physics-oriented work and
+        <a href="https://github.com/steven-scart" target="_blank" class="inline-link">steven-scart</a>
+        for broader development projects.
+      </p>
+    </div>
+    <div class="about-right fade-up">
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-num">3rd</div>
+          <div class="stat-label">Year BSMS</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2</div>
+          <div class="stat-label">GitHub Profiles</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">C++</div>
+          <div class="stat-label">For Physics</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">Oslo</div>
+          <div class="stat-label">FYS3150 Course</div>
+        </div>
+      </div>
+      <div class="currently">
+        <div class="currently-title">▶ Currently working on</div>
+        <p>
+          — Computational Physics in C++ (Oslo FYS3150)<br>
+          — ML / data science projects<br>
+          — New CP project · going public soon
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-head fade-up">
+      <div>
+        <p class="section-label">// selected work</p>
+        <h2>Projects</h2>
+      </div>
+      <div class="github-links">
+        <a href="https://github.com/yojit-kumar" target="_blank" class="btn btn-outline">yojit-kumar ↗</a>
+        <a href="https://github.com/steven-scart" target="_blank" class="btn btn-outline">steven-scart ↗</a>
+      </div>
+    </div>
+
+    <div class="projects-grid fade-up">
+      <a href="https://github.com/yojit-kumar" target="_blank" class="project-card">
+        <div class="project-lang">C++ · Numerical Methods</div>
+        <div class="project-name">Computational Physics<br>(Oslo FYS3150)</div>
+        <div class="project-desc">
+          Working through the University of Oslo's CP curriculum —
+          covering linear algebra solvers, eigenvalue problems, ODEs,
+          and Monte Carlo methods, all implemented from scratch in C++.
+        </div>
+        <div class="project-tags">
+          <span class="tag">C++</span>
+          <span class="tag">Armadillo</span>
+          <span class="tag">ODE solvers</span>
+          <span class="tag">Monte Carlo</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/steven-scart" target="_blank" class="project-card">
+        <div class="project-lang">Python · Machine Learning</div>
+        <div class="project-name">ML &amp; Data<br>Science Projects</div>
+        <div class="project-desc">
+          Exploring statistical learning — regression, classification,
+          and neural networks — with a focus on applications relevant
+          to scientific data analysis.
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">NumPy</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">PyTorch</span>
+        </div>
+      </a>
+
+      <div class="project-card coming-soon">
+        <div class="cs-badge">Coming soon</div>
+        <div class="project-lang">C++ · Physics Simulation</div>
+        <div class="project-name">Computational<br>Physics Project II</div>
+        <div class="project-desc">
+          A new simulation project currently in development.
+          Will be made public once complete.
+        </div>
+        <div class="project-tags">
+          <span class="tag">C++</span>
+          <span class="tag">In progress</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="skills-layout">
+      <div class="fade-up">
+        <p class="section-label">// toolkit</p>
+        <h2>Skills &<br><em>Tools</em></h2>
+        <p class="skills-intro">
+          Tools picked up through coursework, self-study,
+          and side projects. Updated as I learn more.
+        </p>
+      </div>
+      <div class="tool-groups fade-up">
+
+        <div class="tool-group">
+          <div class="tool-group-title">Languages</div>
+          <div class="tool-list">
+            <span class="tool-chip">Python</span>
+            <span class="tool-chip">C++</span>
+            <span class="tool-chip">LaTeX</span>
+            <span class="tool-chip">Bash</span>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <div class="tool-group-title">Scientific Python</div>
+          <div class="tool-list">
+            <span class="tool-chip">NumPy</span>
+            <span class="tool-chip">SciPy</span>
+            <span class="tool-chip">Matplotlib</span>
+            <span class="tool-chip">Pandas</span>
+            <span class="tool-chip">Jupyter</span>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <div class="tool-group-title">Machine Learning</div>
+          <div class="tool-list">
+            <span class="tool-chip">scikit-learn</span>
+            <span class="tool-chip">PyTorch</span>
+            <span class="tool-chip">Seaborn</span>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <div class="tool-group-title">C++ Libraries</div>
+          <div class="tool-list">
+            <span class="tool-chip">Armadillo</span>
+            <span class="tool-chip">STL</span>
+            <span class="tool-chip">CMake</span>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <div class="tool-group-title">Numerical Methods</div>
+          <div class="tool-list">
+            <span class="tool-chip">ODE / PDE solvers</span>
+            <span class="tool-chip">Monte Carlo</span>
+            <span class="tool-chip">Eigenvalue methods</span>
+            <span class="tool-chip">Numerical integration</span>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <div class="tool-group-title">Environment</div>
+          <div class="tool-list">
+            <span class="tool-chip">Git</span>
+            <span class="tool-chip">Linux</span>
+            <span class="tool-chip">VS Code</span>
+            <span class="tool-chip">GDB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-text fade-up">
+      <p class="section-label">// get in touch</p>
+      <h2>Let's<br><em>connect</em></h2>
+      <p>
+        Open to research opportunities, collaborations, or just a
+        conversation about physics and computation.
+      </p>
+      <a href="mailto:your.email@example.com" class="btn btn-primary">Send an Email</a>
+    </div>
+
+    <div class="fade-up">
+      <div class="links-list">
+        <a href="https://github.com/yojit-kumar" target="_blank" class="link-row">
+          <span class="link-label">GitHub (Physics)</span>
+          <span class="link-val">@yojit-kumar</span>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a href="https://github.com/steven-scart" target="_blank" class="link-row">
+          <span class="link-label">GitHub (Dev)</span>
+          <span class="link-val">@steven-scart</span>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a href="https://www.linkedin.com/in/yojit-kumar/" target="_blank" class="link-row">
+          <span class="link-label">LinkedIn</span>
+          <span class="link-val">Yojit Kumar</span>
+          <span class="link-arrow">↗</span>
+        </a>
+        <div class="link-row static-row">
+          <span class="link-label">Location</span>
+          <span class="link-val">India</span>
+          <span class="link-arrow invis">↗</span>
+        </div>
+        <div class="link-row static-row">
+          <span class="link-label">Status</span>
+          <span class="link-val status-dot">Open to opportunities</span>
+          <span class="link-arrow invis">↗</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Yojit Kumar</p>
+    <p class="footer-right">BSMS Physics · India</p>
+  </footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>

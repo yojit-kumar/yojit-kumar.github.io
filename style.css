@@ -418,6 +418,42 @@ h2 em { font-style: italic; color: var(--accent); }
 .project-card.coming-soon::before { display: none; }
 .project-card.coming-soon .project-lang { color: var(--ink3); }
 
+.projects-grid--personal {
+  margin-top: 1px;
+  border-top: none;
+}
+
+.project-card--personal .project-lang {
+  color: var(--ink3);
+}
+
+.project-card--personal::before {
+  background: var(--ink3);
+}
+
+.projects-personal-label {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--ink3);
+  text-transform: uppercase;
+  padding: 28px 0 0;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.projects-personal-label::before,
+.projects-personal-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+
+
 .cs-badge {
   display: inline-block;
   font-family: var(--mono);

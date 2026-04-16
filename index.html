@@ -29,11 +29,12 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-text fade-up">
-      <div class="hero-tag">Physics × Data Science</div>
+      <div class="hero-tag">Hi! I AM</div>
       <h1>Yojit<br><em>Kumar</em></h1>
       <p class="hero-sub">BSMS (3rd Year) · IISER Pune · India</p>
       <p class="hero-desc">
-        SOME GENERIC INTRODUCTION, AND WHAT I LIKE
+        I love working on these problems where you need a bit of coding, 
+        a bit of theory, and a willingness to go down rabbit holes.
       </p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -77,24 +78,28 @@
   <section id="about">
     <div class="about-text fade-up">
       <p class="section-label">// about me</p>
-      <h2>Physics student<br>& <em>aspiring researcher</em></h2>
+      <h2>Student of Physics<br>& <em>aspiring researcher</em></h2>
       <p>
-        I'm a 3rd-year BSMS student at the Indian Institute of Science Education and Research
-        Pune, majoring in Physics. SOME MORE FLUFF.
+        I am a 3rd-year BSMS student at the Indian Institute of Science
+        Education and Research Pune, majoring in Physics.
+        My academic interests largely pull me towards soft matter physics, 
+        computational science, network science and complex systems.
       </p>
       <p>
-        CURRENT THINGS I AM WORKING ON
+        Most of my time right now goes toward learning the fundamentals 
+        and toolsets required for the problems I want to work on.
+        Outside of that: science outreach, cinema, linux & tabletop RPGs.
       </p>
       <p>
-        I maintain two GitHub accounts:
+        I keep two GitHub accounts:
         <a href="https://github.com/yojit-kumar" target="_blank" class="inline-link">yojit-kumar</a>
-        for X work and
+        for academic and research work,
         <a href="https://github.com/steven-scart" target="_blank" class="inline-link">steven-scart</a>
-        for Y.
+        for personal projects (most of the repos are private).
       </p>
     </div>
     <div class="about-right fade-up">
-      <div class="stat-grid">
+      <!--<div class="stat-grid">
         <div class="stat">
           <div class="stat-num">3rd</div>
           <div class="stat-label">Year BSMS</div>
@@ -103,21 +108,23 @@
           <div class="stat-num">2</div>
           <div class="stat-label">GitHub Profiles</div>
         </div>
-        <!--<div class="stat">
+        <div class="stat">
           <div class="stat-num">C++</div>
           <div class="stat-label">For Physics</div>
         </div>
         <div class="stat">
           <div class="stat-num">Oslo</div>
           <div class="stat-label">FYS3150 Course</div>
-        </div>-->
-      </div>
+        </div>
+      </div>-->
       <div class="currently">
         <div class="currently-title">▶ Currently working on</div>
         <p>
-          — A<br>
-          — B<br>
-          — C
+          — Computational Soft Matter Project (Raman Research Institute)<br>
+          — Computatational Physics in C++ Course (self-study, Oslo University) <br>
+          — Manuscript for my work Investigating Compression-based Complexity Measures <br>
+          — Polishing my idea for a screenplay <br>
+          — Converging towards my perfect system config (Hyprland)
         </p>
       </div>
     </div>
@@ -125,7 +132,7 @@
 
   <!-- PROJECTS -->
   <section id="projects">
-    <!--<div class="section-head fade-up">
+    <div class="section-head fade-up">
       <div>
         <p class="section-label">// selected work</p>
         <h2>Projects</h2>
@@ -137,49 +144,102 @@
     </div>
 
     <div class="projects-grid fade-up">
-      <a href="https://github.com/yojit-kumar" target="_blank" class="project-card">
+      <a href="https://github.com/yojit-kumar/information_in_blockchain" target="_blank" class="project-card">
+        <div class="project-lang">Broadcast Protocols · Blockchain</div>
+        <div class="project-name">Information in<br>Blockchain</div>
+        <div class="project-desc">
+          Semester project studying broadcasting protocols in blockchain
+          networks. Discrete-event simulation in SimPy, with Jupyter
+          notebooks for data analysis. Includes the full project report.
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">SimPy</span>
+          <span class="tag">Jupyter</span>
+          <span class="tag">Network theory</span>
+        </div>
+      </a>
+
+      <a href="https://github.com/yojit-kumar/eeg-classification-using-etc" target="_blank" class="project-card">
+        <div class="project-lang">Complex Systems · Machine Learning </div>
+        <div class="project-name">EEG Classification using ETC</div>
+        <div class="project-desc">
+          Part of summer project classifying EEG signals using ETC as a feature
+          and standard ML classifiers. Python scripts and notebooks covering
+          preprocessing, feature extraction, and model evaluation.
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">scikit-learn</span>
+          <span class="tag">Time Series Analysis</span>
+          <span class="tag">Jupyter</span>
+        </div>
+      </a>
+      
+      <div class="project-card coming-soon">
         <div class="project-lang">C++ · Numerical Methods</div>
         <div class="project-name">Computational Physics<br>(Oslo FYS3150)</div>
         <div class="project-desc">
-          Working through the University of Oslo's CP curriculum —
-          covering linear algebra solvers, eigenvalue problems, ODEs,
-          and Monte Carlo methods, all implemented from scratch in C++.
+          Working through the University of Oslo's computational physics
+          curriculum. Covers linear algebra, eigenvalue problems, ODEs,
+          and Monte Carlo methods — implemented from scratch in C++,
+          with documented write-ups per problem set.
         </div>
         <div class="project-tags">
           <span class="tag">C++</span>
           <span class="tag">Armadillo</span>
-          <span class="tag">ODE solvers</span>
           <span class="tag">Monte Carlo</span>
+          <span class="tag">ODE solvers</span>
         </div>
-      </a>
+      </div>
 
-      <a href="https://github.com/steven-scart" target="_blank" class="project-card">
-        <div class="project-lang">Python · Machine Learning</div>
-        <div class="project-name">ML &amp; Data<br>Science Projects</div>
+    </div>
+
+    <div class="projects-personal-label fade-up">personal</div>
+
+    <div class="projects-grid projects-grid--personal fade-up">
+      <div class="project-card project-card--personal">
+        <div class="project-lang">Config · Shell</div>
+        <div class="project-name">Dotfiles</div>
         <div class="project-desc">
-          Exploring statistical learning — regression, classification,
-          and neural networks — with a focus on applications relevant
-          to scientific data analysis.
+          <!--Personal environment configuration — shell, editor, and tool
+          settings. Mostly for my own use, but public in case any of it
+          is useful to someone.-->
+        </div>
+        <div class="project-tags">
+          <span class="tag">Bash</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Config</span>
+        </div>
+      </div>
+
+      <div class="project-card project-card--personal">
+        <div class="project-lang">Writing · TTRPG</div>
+        <div class="project-name">D&amp;D Campaign</div>
+        <div class="project-desc">
+          <!--A tabletop RPG campaign I wrote — worldbuilding, encounter design,
+          lore documents. Putting it here mostly because version-controlling
+          a campaign felt like the right move.-->
+        </div>
+        <div class="project-tags">
+          <span class="tag">Worldbuilding</span>
+          <span class="tag">D&amp;D 5e</span>
+          <span class="tag">Writing</span>
+        </div>
+      </div>
+
+      <!--<div class="project-card coming-soon project-card--personal">
+        <div class="cs-badge">In progress</div>
+        <div class="project-lang">Python · Soft Matter</div>
+        <div class="project-name">RRI Summer<br>Research</div>
+        <div class="project-desc">
+          MD simulation data analysis for cavity nucleation in amorphous
+          media. Work in progress — will be made public after the internship.
         </div>
         <div class="project-tags">
           <span class="tag">Python</span>
-          <span class="tag">NumPy</span>
-          <span class="tag">scikit-learn</span>
-          <span class="tag">PyTorch</span>
-        </div>
-      </a>
-
-      <div class="project-card coming-soon">
-        <div class="cs-badge">Coming soon</div>
-        <div class="project-lang">C++ · Physics Simulation</div>
-        <div class="project-name">Computational<br>Physics Project II</div>
-        <div class="project-desc">
-          A new simulation project currently in development.
-          Will be made public once complete.
-        </div>
-        <div class="project-tags">
-          <span class="tag">C++</span>
-          <span class="tag">In progress</span>
+          <span class="tag">GNN</span>
+          <span class="tag">Soft matter</span>
         </div>
       </div>
     </div>-->
@@ -209,13 +269,13 @@
         </div>
 
         <div class="tool-group">
-          <div class="tool-group-title">Scientific Python</div>
+          <div class="tool-group-title">Python Libraries</div>
           <div class="tool-list">
             <span class="tool-chip">NumPy</span>
             <span class="tool-chip">SciPy</span>
             <span class="tool-chip">Matplotlib</span>
             <span class="tool-chip">Pandas</span>
-            <span class="tool-chip">Jupyter</span>
+            <span class="tool-chip">SimPy</span>
           </div>
         </div>
 
@@ -224,7 +284,6 @@
           <div class="tool-list">
             <span class="tool-chip">scikit-learn</span>
             <span class="tool-chip">PyTorch</span>
-            <span class="tool-chip">Seaborn</span>
           </div>
         </div>
 
@@ -233,27 +292,27 @@
           <div class="tool-list">
             <span class="tool-chip">Armadillo</span>
             <span class="tool-chip">STL</span>
-            <span class="tool-chip">CMake</span>
           </div>
         </div>
 
         <div class="tool-group">
-          <div class="tool-group-title">Numerical Methods</div>
+          <div class="tool-group-title">Physics Coursework</div>
           <div class="tool-list">
-            <span class="tool-chip">ODE / PDE solvers</span>
-            <span class="tool-chip">Monte Carlo</span>
-            <span class="tool-chip">Eigenvalue methods</span>
-            <span class="tool-chip">Numerical integration</span>
+            <span class="tool-chip">Condensed Matter Physics</span>
+            <span class="tool-chip">Statistical Mechanics</span>
+            <span class="tool-chip">Quantum Mechanics</span>
+            <span class="tool-chip">Non-Linear Dynamics</span>
           </div>
         </div>
 
         <div class="tool-group">
-          <div class="tool-group-title">Environment</div>
+          <div class="tool-group-title">Dev Environment</div>
           <div class="tool-list">
             <span class="tool-chip">Git</span>
             <span class="tool-chip">Linux</span>
-            <span class="tool-chip">VS Code</span>
-            <span class="tool-chip">GDB</span>
+            <span class="tool-chip">Conda</span>
+            <span class="tool-chip">SSH</span>
+            <span class="tool-chip">Azure Cloud</span>
           </div>
         </div>
 
@@ -270,7 +329,7 @@
         Open to research opportunities, collaborations, or just a
         conversation about physics and computation.
       </p>
-      <a href="mailto:your.email@example.com" class="btn btn-primary">Send an Email</a>
+      <a href="mailto:yojit_kumar@proton.me" class="btn btn-primary">Send an Email</a>
     </div>
 
     <div class="fade-up">

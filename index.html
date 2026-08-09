@@ -6,7 +6,7 @@
   <title>Yojit Kumar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Playfair+Display:ital,wght@0,700;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;1,9..40,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
     <div class="hero-text fade-up">
       <div class="hero-tag">Hi! I AM</div>
       <h1>Yojit<br><em>Kumar</em></h1>
-      <p class="hero-sub">BSMS (3rd Year) · IISER Pune · India</p>
+      <p class="hero-sub">BS-MS Dual Degree · IISER Pune · India</p>
       <p class="hero-desc">
         I love working on these problems where you need a bit of coding, 
         a bit of theory, and a willingness to go down rabbit holes.
@@ -41,35 +41,17 @@
         <a href="#contact" class="btn btn-outline">Get In Touch</a>
       </div>
     </div>
-
+    
     <div class="hero-visual fade-up">
-      <svg class="physics-diagram" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="physics-diagram" id="packingSVG" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="smallgrid" width="20" height="20" patternUnits="userSpaceOnUse">
-            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--grid-line)" stroke-width="0.5"/>
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="var(--grid-line, #ccc)" stroke-width="0.5"/>
           </pattern>
-          <marker id="arrow" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
-            <path d="M0,0 L0,6 L6,3 z" fill="var(--ink2)"/>
-          </marker>
         </defs>
-        <rect width="360" height="360" fill="url(#smallgrid)" opacity="0.5"/>
-        <line x1="40" y1="320" x2="320" y2="320" stroke="var(--ink2)" stroke-width="1.5" marker-end="url(#arrow)"/>
-        <line x1="40" y1="320" x2="40" y2="40" stroke="var(--ink2)" stroke-width="1.5" marker-end="url(#arrow)"/>
-        <text x="326" y="324" font-family="DM Mono, monospace" font-size="11" fill="var(--ink3)">x</text>
-        <text x="30" y="36" font-family="DM Mono, monospace" font-size="11" fill="var(--ink3)">E</text>
-        <path d="M 40 220 C 60 220, 70 120, 90 140 C 110 160, 120 260, 140 240 C 160 220, 170 160, 190 180 C 210 200, 220 240, 240 230 C 260 220, 270 200, 290 210 C 305 216, 315 218, 320 218"
-          stroke="var(--accent)" stroke-width="2" fill="none" opacity="0.9"/>
-        <line x1="55" y1="290" x2="305" y2="290" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
-        <line x1="55" y1="240" x2="305" y2="240" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
-        <line x1="55" y1="175" x2="305" y2="175" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
-        <line x1="55" y1="115" x2="305" y2="115" stroke="var(--border)" stroke-width="1" stroke-dasharray="4,4"/>
-        <text x="308" y="293" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=1</text>
-        <text x="308" y="244" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=2</text>
-        <text x="308" y="179" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=3</text>
-        <text x="308" y="119" font-family="DM Mono, monospace" font-size="9" fill="var(--ink3)">n=4</text>
-        <path d="M 60 70 L 60 310 L 300 310 L 300 70" stroke="var(--ink)" stroke-width="2" fill="none" opacity="0.3"/>
-        <circle cx="190" cy="180" r="4" fill="var(--accent)"/>
-        <text x="60" y="64" font-family="DM Mono, monospace" font-size="10" fill="var(--ink3)">ψ(x) — particle in a box</text>
+        <rect width="360" height="360" fill="url(#smallgrid)" opacity="0.4"/>
+        <!-- Particles generated via script.js -->
+        <g id="ka-particles"></g>
       </svg>
     </div>
   </section>
@@ -80,7 +62,7 @@
       <p class="section-label">// about me</p>
       <h2>Student of Physics<br>& <em>aspiring researcher</em></h2>
       <p>
-        I am a 3rd-year BSMS student at the Indian Institute of Science
+        I am a BS-MS student at the Indian Institute of Science
         Education and Research Pune, majoring in Physics.
         My academic interests largely pull me towards soft matter physics, 
         computational science, network science and complex systems.
@@ -99,29 +81,10 @@
       </p>
     </div>
     <div class="about-right fade-up">
-      <!--<div class="stat-grid">
-        <div class="stat">
-          <div class="stat-num">3rd</div>
-          <div class="stat-label">Year BSMS</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">2</div>
-          <div class="stat-label">GitHub Profiles</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">C++</div>
-          <div class="stat-label">For Physics</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">Oslo</div>
-          <div class="stat-label">FYS3150 Course</div>
-        </div>
-      </div>-->
       <div class="currently">
         <div class="currently-title">▶ Currently working on</div>
         <p>
-          — Computational Soft Matter Project (Raman Research Institute)<br>
-          — Computatational Physics in C++ Course (self-study, Oslo University) <br>
+          — Semester Project: Topoligically Modified Polymers in an Ellipsoid confinement (IISER Pune)<br>
           — Manuscript for my work Investigating Compression-based Complexity Measures <br>
           — Polishing my idea for a screenplay <br>
           — Converging towards my perfect system config (Hyprland)
@@ -144,6 +107,19 @@
     </div>
 
     <div class="projects-grid fade-up">
+      <div class="project-card">
+        <div class="project-lang">Soft Matter · GNNs</div>
+        <div class="project-name">Predicting Cavity<br>Nucleation</div>
+        <div class="project-desc">
+          Summer project at RRI Bengaluru predicting cavity nucleation from local structure using Graph Neural Networks (GNNs). 
+        </div>
+        <div class="project-tags">
+          <span class="tag">Python</span>
+          <span class="tag">PyG</span>
+          <span class="tag">Soft Matter</span>
+        </div>
+      </div>
+
       <a href="https://github.com/yojit-kumar/information_in_blockchain" target="_blank" class="project-card">
         <div class="project-lang">Broadcast Protocols · Blockchain</div>
         <div class="project-name">Information in<br>Blockchain</div>
@@ -164,9 +140,7 @@
         <div class="project-lang">Complex Systems · Machine Learning </div>
         <div class="project-name">EEG Classification using ETC</div>
         <div class="project-desc">
-          Part of summer project classifying EEG signals using ETC as a feature
-          and standard ML classifiers. Python scripts and notebooks covering
-          preprocessing, feature extraction, and model evaluation.
+          Investigated compression-based complexity measures (CCMs) and classified EEG signals using ETC as a feature. Presented at CODS 2025.
         </div>
         <div class="project-tags">
           <span class="tag">Python</span>
@@ -176,22 +150,18 @@
         </div>
       </a>
       
-      <div class="project-card coming-soon">
-        <div class="project-lang">C++ · Numerical Methods</div>
-        <div class="project-name">Computational Physics<br>(Oslo FYS3150)</div>
+      <a href="https://github.com/yojit-kumar/PH3144_ElectronicsProject" target="_blank" class="project-card">
+        <div class="project-lang">Electronics · Control Systems</div>
+        <div class="project-name">AC Power<br>Controller</div>
         <div class="project-desc">
-          Working through the University of Oslo's computational physics
-          curriculum. Covers linear algebra, eigenvalue problems, ODEs,
-          and Monte Carlo methods — implemented from scratch in C++,
-          with documented write-ups per problem set.
+          Course project designing a phase-control based precision AC power controller. Implemented PID algorithm for closed loop feedback using Arduino.
         </div>
         <div class="project-tags">
-          <span class="tag">C++</span>
-          <span class="tag">Armadillo</span>
-          <span class="tag">Monte Carlo</span>
-          <span class="tag">ODE solvers</span>
+          <span class="tag">Arduino</span>
+          <span class="tag">PID Control</span>
+          <span class="tag">Electronics</span>
         </div>
-      </div>
+      </a>
 
     </div>
 
@@ -228,21 +198,7 @@
         </div>
       </div>
 
-      <!--<div class="project-card coming-soon project-card--personal">
-        <div class="cs-badge">In progress</div>
-        <div class="project-lang">Python · Soft Matter</div>
-        <div class="project-name">RRI Summer<br>Research</div>
-        <div class="project-desc">
-          MD simulation data analysis for cavity nucleation in amorphous
-          media. Work in progress — will be made public after the internship.
-        </div>
-        <div class="project-tags">
-          <span class="tag">Python</span>
-          <span class="tag">GNN</span>
-          <span class="tag">Soft matter</span>
-        </div>
-      </div>
-    </div>-->
+    </div>
   </section>
 
   <!-- SKILLS -->
@@ -263,8 +219,19 @@
           <div class="tool-list">
             <span class="tool-chip">Python</span>
             <span class="tool-chip">C++</span>
+            <span class="tool-chip">R</span>
+            <span class="tool-chip">Fortran</span>
             <span class="tool-chip">LaTeX</span>
             <span class="tool-chip">Bash</span>
+          </div>
+        </div>
+
+        <div class="tool-group">
+          <div class="tool-group-title">Simulation & Physics</div>
+          <div class="tool-list">
+            <span class="tool-chip">LAMMPS</span>
+            <span class="tool-chip">OVITO</span>
+            <span class="tool-chip">MATLAB</span>
           </div>
         </div>
 
@@ -276,6 +243,7 @@
             <span class="tool-chip">Matplotlib</span>
             <span class="tool-chip">Pandas</span>
             <span class="tool-chip">SimPy</span>
+            <span class="tool-chip">Freud</span>
           </div>
         </div>
 
@@ -284,24 +252,7 @@
           <div class="tool-list">
             <span class="tool-chip">scikit-learn</span>
             <span class="tool-chip">PyTorch</span>
-          </div>
-        </div>
-
-        <div class="tool-group">
-          <div class="tool-group-title">C++ Libraries</div>
-          <div class="tool-list">
-            <span class="tool-chip">Armadillo</span>
-            <span class="tool-chip">STL</span>
-          </div>
-        </div>
-
-        <div class="tool-group">
-          <div class="tool-group-title">Physics Coursework</div>
-          <div class="tool-list">
-            <span class="tool-chip">Condensed Matter Physics</span>
-            <span class="tool-chip">Statistical Mechanics</span>
-            <span class="tool-chip">Quantum Mechanics</span>
-            <span class="tool-chip">Non-Linear Dynamics</span>
+            <span class="tool-chip">PyG</span>
           </div>
         </div>
 
